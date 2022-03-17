@@ -3,12 +3,12 @@
 int power(int a,int b);
 
 int power(int a, int b ){
-    int powe;
+    float powe;
     powe=pow(a,b);
     return powe;
 }
 
 int main(){
-    printf("%d", power(2,-3));
+    printf("%f", power(2,-3));
     return 0;
 }

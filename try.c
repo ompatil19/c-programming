@@ -1,17 +1,16 @@
 #include <stdio.h>
-
+int sum(int x,int y);
 int main(void) {
-	int t,a=1,n;
-	scanf("%d", &t);
-	while(t--){
-	    scanf("%d", &n);
-	    for(int i=1;i<=n;i++){
-	        for(int j=n;j>=1;j--){
-	            printf("%d",a);
-	            a++;
-	        }
-	        printf("\n");
-	    }
-	}
+	int a=7,b=8;
+	printf("the value of a and b is %d and %d \n",a,b);
+	printf("the sum of a and b is %d \n",sum(a,b));
+	printf("the value of a and b after function call is %d and %d \n",a,b);
 	return 0;
+}
+int sum(int x,int y){
+	int c;
+	x=10000;
+	y=20000;
+	c=x+y;
+	return c;
 }
