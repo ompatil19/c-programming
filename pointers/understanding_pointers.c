@@ -9,5 +9,8 @@ int main(){
     printf("The address of i is %u\n", j);
     printf("The address of j is %u\n", &j);
     printf("The value of j is %u\n", *(&j));
+    *j=20;
+    printf("the value of i is %d\n",i);
+    printf("The value of j is %u\n", *(&j));
     return 0;
 }

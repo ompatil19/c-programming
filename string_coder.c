@@ -12,8 +12,11 @@ int main(){
     int n=strlen(str);
     for(int i=0;i<n;i++){
     ch=str[i];
-    if((int)ch>=97 && (int)ch<122){
-        ch=replace(str1,(int)ch-65);
+    if(ch>=97 && ch<122){
+        ch=replace(str1,ch-97);
+    }
+    if(ch>=65 && ch<90){
+        ch=replace(str1,ch-65);
     }
     if(ch=='_'){
         ch=' ';
